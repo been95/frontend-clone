@@ -1,15 +1,8 @@
-*{
-	text-decoration: none;
-	margin: 0 auto;
-	color: #000;
-	list-style: none;
-}
-
-header{
+.header_wrap{
 	
 	text-align: center;
 }
-header h1{
+.header_wrap h1{
 	background-image: url('../images/naver_header_logo.png');
 	background-repeat: no-repeat;
 	float: left;
@@ -17,12 +10,12 @@ header h1{
 	height: 17px;
 	margin: 32px 0 0 30px;
 }
-header h1 a{
+.header_wrap h1 a{
 	display: block;
 	width: 100%;
 	height: 100%;
 }
-header h1 span{
+.header_wrap h1 span{
 	position: absolute;
 	width:1px;
 	height: 1px;
@@ -30,10 +23,10 @@ header h1 span{
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
-nav ul li{
+.gnb ul li{
 	display: inline-block;
 }
-nav ul li a{
+.gnb ul li a{
 	display: block;
 	position: relative;
 	margin: 0 32px;
@@ -50,24 +43,29 @@ nav ul li a{
 }
 /*visualArea"*/
 
-.cont{
+.visualArea{
 	background-image: url('../images/naver_img_main_slide3.jpg');
 	color:#fff;
 	height:766px;
+	display:block;
+	position:relative;
 }
-.cont_text{
+.cont{
 	position:absolute;
 	left:160px;
-	top:150%;
+	bottom: 160px;
 	
 }
-.cont_text strong{
+.cont strong{
 	font-size: 36px;
 	line-height: 46px;
 }
-.cont_text p{
+.cont p{
 	margin-top:32px;
 }
+
+
+
 .main_content{
 	padding:  0 150px 120px;
 }	
