@@ -2,6 +2,12 @@
 * {
 	box-sizing: border-box;
 }
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
 body {
 	margin: 0;
 }
@@ -103,4 +109,180 @@ body {
 	margin-top:32px;
 	font-size: 15px;
     line-height: 1.6;
+}
+.btn_prev{
+	position: absolute;
+	background-color: rebeccapurple;
+}
+.main_content{
+	max-width: 100%;
+    padding: 0 150px 120px;
+}
+.content_summary{
+	margin-top: 69px;
+}
+.summary_container {
+    position: relative;
+	float: left;
+    width: 26.6%;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.summary_container:first-child{
+	padding-left: 0;
+}
+.summary_title{
+	font-size: 14px;
+	color:#212121;
+}
+.summary_container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.summary_container:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: #efefef;
+}
+.news_box{
+	width: 100%;
+	height:76px;
+	margin: 31px 0 30px;
+}
+.news_title{
+	display: block;
+	font-size: 16px;
+	color: #333;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.news_text{
+	height: 44px;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #878890;
+    line-height: 1.6;
+    overflow: hidden;
+	
+}
+.summary_link{
+	position: relative;
+    padding-right: 32px;
+    font-size: 15px;
+    color: #333;
+	font-weight: bold;
+}
+.career_text{
+	height: 76px;
+    margin: 31px 0 30px;
+    font-size: 18px;
+    color: #333;
+	font-weight: bold;
+}
+.stock_info_box {
+    height: 76px;
+    margin: 23px 0 38px;
+    color: #333;
+}
+.stock_price_box {
+    position: relative;
+    padding-bottom: 7px;
+}
+.price {
+    float: left;
+    font-size: 36px;
+    letter-spacing: -1.7px;
+	margin: 0;
+    padding: 0;
+	font-weight: bold;
+}
+.stock_price_box:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+}
+.unit {
+    font-size: 12px;
+}
+.figure {
+    float: right;
+    margin-top: 23px;
+	position: relative;
+	padding-left: 18px;
+}
+.stock_price_box:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.date {
+    margin-top: 12px;
+    font-size: 12px;
+    color: #878890;
+    text-align: right;
+}
+.summary_container:nth-child(4) {
+    width: 20.2%;
+    padding-right: 0;
+}
+.service_thumbnail_box{
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    width: 33.4%;
+    padding-top: 25%;
+    background: no-repeat 50%;
+    background-size: cover;
+    cursor: pointer;
+	background-color: aqua;
+}
+.content_service{
+    margin-top: 98px;
+	display: block;
+}
+.service_list_container {
+    font-size: 0;
+}
+.thumbnail_dimmed {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(58, 62, 80, 0.5);
+    font-size: 15px;
+    opacity: 0;
+	transition: opacity .3s;
+}
+.thumbnail_dimmed dl {
+    position: absolute;
+    left: 0px;
+    bottom: -103px;
+    width: 100%;
+    padding-top: 50px;
+    padding-left: 30px;
+    color: #fff;
+    transition: bottom .3s;
+}
+.thumbnail_dimmed dt {
+    margin-bottom: 2px;
+    font-size: 22px;
+}
+.thumbnail_dimmed dl dd {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
 }
