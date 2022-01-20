@@ -9,9 +9,15 @@ a{
 li{
 	list-style: none;
 }
+
 body {
 	margin: 0;
     padding: 0;
+}
+#wrap {
+    position: relative;
+    min-width: 1120px;
+    min-height: 100%;
 }
 .header_wrap{
 	position:fixed;
@@ -382,4 +388,11 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: #f8f9fa;
+}
+.footer_wrap {
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 74px 0 70px;
+    text-align: center;
 }
