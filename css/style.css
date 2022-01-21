@@ -13,6 +13,12 @@ li{
 body {
 	margin: 0;
     padding: 0;
+    font-style: normal;
+    line-height: 1.4;
+}
+dd{
+    margin: 0;
+    padding: 0;
 }
 #wrap {
     position: relative;
@@ -325,10 +331,20 @@ body {
     max-width: 1360px;
     margin: 0 auto;
 }
+.support_list_container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
 .support_list_box {
     float: left;
     position: relative;
     width: 25%;
+}
+.text_line {
+    display: block;
+    margin: 0;
+    word-break: keep-all;
 }
 .support_list_box:before {
     content: '';
@@ -339,6 +355,7 @@ body {
     height: 215px;
     background-color: #efefef;
 }
+
 .support_list_box a {
     display: block;
     position: relative;
@@ -393,6 +410,36 @@ footer {
     position: relative;
     max-width: 1600px;
     margin: 0 auto;
-    padding: 74px 0 70px;
+    padding: 70px 0 66px;
     text-align: center;
+}
+.footer_wrap .footer_logo {
+    position: absolute;
+    left: 30px;
+    top: 76px;
+    width: 63px;
+    height: 13px;
+    margin: 0 auto;
+    background-image: url(../images/naver_footer_logo.png);
+}
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    overflow: hidden;
+}
+.footer_menu {
+    position: absolute;
+    font-size: 0;
+    left: 105px;
+    top: 74px;
+}
+.footer_menu > li {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+    font-size: 14px;
+}
+.footer_menu .footer_menu_item {
+    color: #878890;
 }
