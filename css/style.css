@@ -9,7 +9,10 @@ a{
 li{
 	list-style: none;
 }
-
+button {
+    border: 0;
+    background: none;
+}
 body {
 	margin: 0;
     padding: 0;
@@ -100,8 +103,6 @@ button{
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 12px;
-	margin:0 41px 0 0; 
-	
 }
 .header_lang a{
 	margin:0 21px 0 0;
@@ -119,6 +120,26 @@ button{
     height: 9px;
     background-color: #333;
     opacity: 0.6;
+}
+
+.burger div{
+    position: relative;
+    background-color: #333;
+    width: 24px;
+    height: 4px;
+    margin:2px;
+    transition:all 0.5s;
+    left: 80%;
+    top: -16px;
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 4px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -4px);
 }
 .slide_info_container{
     bottom: 0;
