@@ -1,7 +1,7 @@
 @charset "utf-8";
 * {
 	box-sizing: border-box;
-    
+    margin:0;padding:0;
 }
 a{
 	text-decoration: none;
@@ -45,6 +45,9 @@ button{
 	height: 80px;
 	margin: 0 auto;
 	text-align: center;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header_wrap h1{
 	background-image:url('../images/naver_header_logo.png');
@@ -53,7 +56,7 @@ button{
 	width: 87px;
 	height: 17px;
 	text-align: center;
-	margin: 32px 0 0 30px;
+    align-items:flex-start;
 	
 }
 .header_wrap h1 span{
@@ -62,14 +65,14 @@ button{
 	overflow: hidden;
 }
 .gnb {
-	display: inline-block;
+
 }
 .gnb ul{
-	font-size: 0;
 	text-align: center;
+    display:flex;
 }
 .gnb ul li{
-	display: inline-block;
+	
 }
 .gnb ul li a{
 	text-decoration: none;
@@ -81,7 +84,7 @@ button{
     color: #333;
 	font-weight: bold;
 }
-.gnb ul li a:before {
+.gnb a:before {
     content: '';
     position: absolute;
     left: -1px;
@@ -93,15 +96,16 @@ button{
     transition: 0.3s;
     transform-origin: 0 0;
 }
+.gnb ul li a:hover::before{
+    transform: scaleX(1);
+}
 .accNav{
-	float: right;
 	width: 144px;
-	margin:29px 25px 0 0;
-	font-size: 0;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 .header_lang{
-	display: inline-block;
-	vertical-align: middle;
 	font-size: 12px;
 }
 .header_lang a{
@@ -121,16 +125,17 @@ button{
     background-color: #333;
     opacity: 0.6;
 }
-
-.burger div{
+.btn_sitemap{
+    cursor: pointer;/*손바닥나오는애*/
+}
+.btn_sitemap span{
+    display:block;
     position: relative;
     background-color: #333;
     width: 24px;
     height: 4px;
     margin:2px;
     transition:all 0.5s;
-    left: 80%;
-    top: -16px;
 }
 .toggle .line1{
     transform: rotate(-45deg) translate(-5px, 4px);
@@ -166,7 +171,7 @@ button{
 .cont p{
 	margin-top:32px;
 	font-size: 15px;
-    line-height: 1.6;
+    sline-height: 1.6;
 }
 
 
