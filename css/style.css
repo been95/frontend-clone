@@ -64,16 +64,12 @@ button{
 	clip: rect(0 0 0 0 );
 	overflow: hidden;
 }
-.gnb {
 
-}
 .gnb ul{
 	text-align: center;
     display:flex;
 }
-.gnb ul li{
-	
-}
+
 .gnb ul li a{
 	text-decoration: none;
 	display: block;
