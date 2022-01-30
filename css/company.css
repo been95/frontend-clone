@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
 *{
     box-sizing: border-box;
 }
@@ -109,3 +108,25 @@ dl, dt{
 }
 
 /*table*/
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.table tr:first-child {
+    border-top: 2px solid #333;
+}
+
+.table th {
+    height: 56px;
+    border-bottom: 1px solid #efefef;
+    font-family: "NanumSquare-B", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    font-size: 15px;
+    color: #333;
+    text-align: left;
+}
