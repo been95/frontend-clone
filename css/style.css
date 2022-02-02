@@ -39,6 +39,7 @@ button{
 	z-index: 10;
 	left: 0;
 	top: 0;
+    box-shadow: rgb(0 0 0 / 10%) 10px 10px 10px;
 }
 .header_inner{
 	width: 1600px;
@@ -57,6 +58,7 @@ button{
 	height: 17px;
 	text-align: center;
     align-items:flex-start;
+    
 	
 }
 .header_wrap h1 span{

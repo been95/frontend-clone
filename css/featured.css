@@ -162,3 +162,41 @@ element.style {
 	background: url("../images/naver_sprite.png") no-repeat;
 	background-size: 474px 1500px;
 }
+/*content_box_right*/
+.content_box_right {
+	width: 400px;
+	border-top: 0;
+}
+.content_box .content_box_right {
+	display: inline-block;
+	width: 76.5%;
+	font-size: 15px;
+	color: #606167;
+}
+.carouse1{
+		position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    border: none;
+    overflow: visible;
+}
+ul .imgs{
+	padding:0;
+	margin: 0;
+}
+ul.imgs li{
+	position: absolute;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	border-radius: 30px;
+}
+ul.imgs li img{
+	box-shadow: rgb(0 0 0 / 10%) 10px 10px 10px;
+	width: 223px;
+	height: 396px;
+	top: -40px;
+	right: 64px;
+
+}
