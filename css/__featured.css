@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+.content_box .left_wide {
+  margin-top: 0;
+  padding: 20px 0 35px;
+  border-bottom: 1px solid #efefef;
+}
+.content_box:first-child {
+  margin: 0;
+}
+.content_box.left_wide:first-child {
+  padding-top: 0;
+}
+.content_box.left_wide .content_box_left {
+  float: left;
+  width: calc(100% - 400px);
+  padding: 0 39px 0 0;
+}
+.service .content_box_left {
+  margin-top: -3px;
+}
+.content_box.left_wide .content_box_title {
+  margin: 34px 0 20px;
+  font-size: 26px;
+  line-height: 34px;
+  letter-spacing: -0.2px;
+}
+/*content_box_title*/
+.content_box.left_wide .content_box_title {
+  margin: 34px 0 20px;
+  font-size: 26px;
+  line-height: 34px;
+  letter-spacing: -0.2px;
+}
+.content_box.left_wide .content_box_title strong {
+  display: block;
+  color: #00b843;
+}
+/*content_box_info*/
+.content_box.left_wide .info_icon {
+  float: left;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 6px 28px 0 0;
+}
+.content_box.left_wide .info_icon:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80px;
+  height: 80px;
+  margin: -40px 0 0 -40px;
+  background: url("../images/naver_sprite.png") no-repeat;
+  background-size: 474px 1500px;
+}
+.content_box.left_wide .info_icon.naver:before {
+  background-position: -127px -153px;
+}
+
+.content_box.left_wide .info_text {
+  margin: 0 0 25px;
+  font-size: 15px;
+  color: #606167;
+  line-height: 1.8;
+}
+.service_link_item.item1 {
+  width: 20px;
+  background-position: -110px -102px;
+}
+.service_link_item.item2 {
+  width: 24px;
+  background-position: -136px -102px;
+}
+.service_link_item.item3 {
+  width: 25px;
+  height: 22px;
+  background-position: -166px -103px;
+}
+.service_link_item.item4 {
+  width: 22px;
+  height: 22px;
+  background-position: -149px -129px;
+}
+
+.service_link_item {
+  float: left;
+  display: block;
+  margin: 0 30px 0 0;
+  height: 23px;
+  background: url("../images/naver_sprite.png") no-repeat;
+  background-size: 474px 1500px;
+}
+/*content_box_right*/
+.content_box_right {
+  width: 400px;
+  border-top: 0;
+}
+.content_box .content_box_right {
+  display: inline-block;
+  width: 76.5%;
+  font-size: 15px;
+  color: #606167;
+}
+.carouse1 {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  border: none;
+  overflow: visible;
+}
+
+ul.imgs li {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 30px;
+}
+ul.imgs li img {
+  box-shadow: rgb(0 0 0 / 10%) 10px 10px 10px;
+  width: 223px;
+  height: 396px;
+  top: -40px;
+  right: 64px;
+}

@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+.header_wrap {
+  position: fixed;
+  width: 100%;
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 10;
+  left: 0;
+  top: 0;
+  box-shadow: rgb(0 0 0 / 10%) 10px 10px 10px;
+}
+.header_inner {
+  width: 1600px;
+  height: 80px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_wrap h1 {
+  background-image: url("../images/naver_header_logo.png");
+  background-repeat: no-repeat;
+  float: left;
+  width: 87px;
+  height: 17px;
+  text-align: center;
+  align-items: flex-start;
+}
+.header_wrap h1 span {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.gnb ul {
+  text-align: center;
+  display: flex;
+}
+
+.gnb ul li a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  margin: 0 32px;
+  padding: 29px 0 30px;
+  font-size: 15px;
+  color: #333;
+  font-weight: bold;
+}
+.gnb a:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  bottom: 20px;
+  width: calc(100% + 2px);
+  height: 2px;
+  background-color: #1ec545;
+  transform: scaleX(0);
+  transition: 0.3s;
+  transform-origin: 0 0;
+}
+.gnb ul li a:hover::before {
+  transform: scaleX(1);
+}
+.accNav {
+  width: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_lang {
+  font-size: 12px;
+}
+.header_lang a {
+  margin: 0 21px 0 0;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+}
+.header_lang a:first-child::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -12px;
+  top: 2px;
+  width: 1px;
+  height: 9px;
+  background-color: #333;
+  opacity: 0.6;
+}
+.btn_sitemap {
+  cursor: pointer; /*손바닥나오는애*/
+}
+.btn_sitemap span {
+  display: block;
+  position: relative;
+  background-color: #333;
+  width: 24px;
+  height: 4px;
+  margin: 2px;
+  transition: all 0.5s;
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 4px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -4px);
+}
+.slide_info_container {
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,6 @@
+@charaset "utf-8";
+
+/* visual */
+.flower .visual {
+  background-image: url("../images/img_flower.jpg");
+}

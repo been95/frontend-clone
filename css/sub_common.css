@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/* layout common */
+
+.subMain {
+  padding: 100px 0 160px;
+}
+
+.base {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/*location*/
+
+.location {
+  padding: 0 0 36px 30px;
+}
+
+.location li {
+  float: left;
+  position: relative;
+  margin-top: -2px;
+  padding: 0 25px 0 0;
+}
+.location li:last-child {
+  padding: 0;
+}
+.location li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  width: 5px;
+  height: 7px;
+  background-image: url("../images/sprite.png") no-repeat;
+  background-position: -130px 0;
+}
+.location a {
+  font-size: 12px;
+  color: #878890;
+}
+.location a:hover {
+  text-decoration: underline;
+}
+
+/*content_head*/
+
+.subMain .intro {
+  text-align: center;
+}
+
+.subMain .intro h2 {
+  padding: 0 0 30px;
+  font-size: 42px;
+  color: #212121;
+  letter-spacing: -2.5px;
+  font-weight: bold;
+}
+
+.subMain .intro p {
+  font-size: 20px;
+  color: #333;
+  line-height: 32px;
+  letter-spacing: -0.2px;
+}
+
+/* sub Visual */
+
+.subMain .visual {
+  height: 350px;
+  background: no-repeat center center/cover;
+  margin: 35px 0;
+}
