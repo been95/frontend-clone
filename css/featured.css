@@ -23,3 +23,39 @@
   padding: 0 46px;
   width: 270px;
 }
+
+/*list base*/
+.content h3{
+  margin: 34px 0 20px;
+  font-size: 26px;
+  line-height: 34px;
+}
+.content h3 strong{
+  display: block;
+  color: #00b843;
+}
+.icon{
+  float: left;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin:6px 28px 0 0;
+}
+.icon:before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80px;
+  height: 80px;
+  margin: -40px 0 0 -40px;
+  background: url("../images/sprite.png") no-repeat;
+  background-position: -127px -153px;
+}
+.content p{
+  margin: 0 0 25px;
+  font-size: 15px;
+  color: #606167;
+  line-height: 1.8;
+}

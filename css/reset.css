@@ -34,6 +34,11 @@ table {
   border-spacing: 0;
   width: 100%;
 }
+th{
+  text-align: left;
+  color: #333;
+  font-weight: bold;
+}
 .blind {
   position: absolute;
   width: 1px;

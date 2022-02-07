@@ -35,8 +35,9 @@
   width: 5px;
   height: 7px;
   background-image: url("../images/sprite.png") no-repeat;
-  background-position: -130px 0;
+  background-position: -103px 0;
 }
+
 .location a {
   font-size: 12px;
   color: #878890;
