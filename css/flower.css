@@ -1,6 +1,26 @@
-@charaset "utf-8";
+@charset "utf-8";
 
 /* visual */
 .flower .visual {
   background-image: url("../images/img_flower.jpg");
+}
+.flower_list{
+  display: flex;
+  justify-content: space-between;
+}
+.flower_list li{
+  color: #606167;
+  font-size: 15px;
+  line-height:1.8;
+  padding-right: 30px;
+}
+
+.flower_list li:last-child{
+  padding-left: 30px;
+  padding-right:0;
+}
+.flower_list:after{
+  content: "";
+  display: block;
+  clear: both;
 }
