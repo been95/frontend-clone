@@ -24,3 +24,70 @@
   display: block;
   clear: both;
 }
+
+
+.btn_area{
+  margin-top: 24px;
+  display:flex;
+  
+}
+.btn_area a{
+    margin-left: 16px;
+}
+.btn_area .btn_text{
+  color: #333;
+  font-weight: bold;
+  margin-right: 16px;
+  line-height: 46px;
+}
+.icon_down {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 46px;
+  height: 46px;
+  background-color: #bac2cd;
+  border-radius: 100%;
+}
+.icon_next {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  width: 46px;
+  height: 46px;
+  background-color: #bac2cd;
+  border-radius: 100%;
+}
+.icon_down:hover {
+  background-color: #00c73c;
+}
+.icon_next:hover {
+  background-color: #00c73c;
+}
+.icon_down:before {
+  width: 18px;
+  height: 19px;
+  margin: -9px 0 0 -9px;
+}
+.icon_down:before,
+.icon_vod:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: url("../images/sprite.png") no-repeat;
+  background-position: -266px 0;
+  background-size: 474px 1500px;
+}
+.icon_next:before {
+  content: "";
+  width: 15px;
+  height: 14px;
+  margin: -7px 0 0 -8px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: url("../images/sprite.png") no-repeat;
+  background-size: 474px 1500px;
+  background-position: -230px 0;
+}
