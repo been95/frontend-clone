@@ -7,11 +7,13 @@
     margin: 0 0 60px 0;
 }
 
-.report_container ul li img{
+.report_container ul li .img_box{
     overflow: hidden;
     position: relative;
     width: 100%;
     margin: 0 0 19px;
+    background:no-repeat 50%;
+    padding-top: 56.1%;
 }
 
 .report_container ul li a  {
