@@ -1,50 +1,75 @@
 @charset "utf-8";
 
-.report_container ul li{
-    display: inline-block;
-    vertical-align: top;
-    width: 33%;
-    margin: 0 0 60px 0;
+.report .list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.report_container ul li .img_box{
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    margin: 0 0 19px;
-    background:no-repeat 50%;
-    padding-top: 56.1%;
+.report .list li {
+  width: calc((100% - 80px) / 3);
+  margin-top: 60px;
 }
 
-.report_container ul li a  {
-    display: block;
-    width: calc(100% - 40px);
-    height: 100%;
-    margin: 0 auto;
+.report .list a {
+  display: block;
 }
-.report_container ul li h3{
 
-    font-size: 16px;
-    color: #212121;
-    line-height:1.6;
-    margin: 0 0 5px;
-    padding:0 10px 0 0;
-    word-break: break-all;
-    overflow: hidden;
-    -webkit-line-clamp: 2;
+.report .list .thumb {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  background: no-repeat center center/cover;
+  background-image: url("../images/20220128094655_1.png");
+  margin-bottom: 20px;
 }
-.report_container P{
-    height: 70px;
-    margin: 0 0 9px;
-    font-size: 14px;
-    color: #606167;
-    line-height: 1.6;
-    overflow: hidden;
-    word-break: break-all;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+
+.report .list li:nth-child(1) .thumb {
+  background-image: url("../images/20220127081412.png");
 }
-.report_container span{
-    font-size: 12px;
-    color:#878890;
+.report .list li:nth-child(2) .thumb {
+  background-image: url("../images/img_promotion_no_image.png");
+}
+.report .list li:nth-child(3) .thumb {
+  background-image: url("../images/20220128094655_1.png");
+}
+
+.report .list .thumb img {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.report .list article {
+}
+
+.report .list article h3 {
+  font-size: 16px;
+  color: #212121;
+  line-height: 1.6;
+  margin: 0 0 5px;
+  padding: 0 10px 0 0;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.report .list article p {
+  margin: 0 0 9px;
+  font-size: 14px;
+  color: #606167;
+  line-height: 1.6;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.report .list time {
+  font-size: 12px;
+  color: #878890;
 }
