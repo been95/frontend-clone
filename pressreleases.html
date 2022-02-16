@@ -65,59 +65,19 @@
 
         <div class="intro"> 
             <h2>보도자료</h2>
-
-            
-            <div class="search">
-                <button type="button" class="btn_select">전체</button>
-                <ul class="searchmenu" role="listbox">
-                    <li role="option" aria-selected="true">
-                        <button type="button" aria-label="false">전체</button>
-                    </li>
-                    <li role="option">
-                        <button type="button" aria-label="false" data-regyear="2022">2022년</button>
-                    </li>
-                    <li role="option">
-                        <button type="button" aria-label="false" data-regyear="2021">2021년</button>
-                    </li>
-                    <li role="option">
-                        <button type="button" aria-label="false" data-regyear="2020">2020년</button>
-                    </li>
-                    <li role="option">
-                        <button type="button" aria-label="false" data-regyear="2019">2019년</button>
-                    </li>
-                    <li role="option">
-                        <button type="button" aria-label="false" data-regyear="2018">2018년</button>
-                    </li>
-                    <li role="option">
-                        <button type="button" aria-label="false" data-regyear="2017">2017년</button>
-                    </li>
-                    <li role="option">
-                        <button type="button" aria-label="false" data-regyear="2016">2016년</button>
-                    </li>
-                    <li role="option">
-                        <button type="button" aria-label="false" data-regyear="2015">2015년</button>
-                    </li>
-                    <li role="option">
-                        <button type="button" aria-label="false" data-regyear="2014">2014년</button>
-                    </li>
-                    <li role="option">
-                        <button type="button" aria-label="false" data-regyear="2013">2013년</button>
-                    </li>
-                    <li role="option">
-                        <button type="button" aria-label="false" data-regyear="2012">2012년</button>
-                    </li>
-                    <li role="option">
-                        <button type="button" aria-label="false" data-regyear="2011">2011년</button>
-                    </li>
-                </ul>
-                <div class="search_box">
-                    <form name = "search" method = "get" action ="a.jsp" onsubmit="return check()">
-                        <input type="text" name="keyword">
-                        <button type="button">
-                            <span>검색</span>
-                        </button>
-                    </form>
-                </div>
+            <div class="line_box">
+                <form class = 'search'> 
+                    <select class = 'SelectSearch' name = 'WhichSearch'>
+                        <option id = 'btn_select' value = '2022'>2022</option>
+                        <option id = 'btn_select' value = '2021'>2021</option>
+                    </select>
+                    <input class = 'keyword' type = 'text' name = 'search' maxlength = 255 value = "" autocomplete = "off">
+                
+                    
+                    <button class = "btn_search" type = "submit" name = "click" value = "">
+                        <span class = "blind"></span>
+                    </button>
+                </form>
             </div>
             <!--<div class="search">
                 <input type="text" list="potalsite">
