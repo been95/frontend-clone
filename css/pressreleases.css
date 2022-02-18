@@ -5,11 +5,12 @@
 }
 .keyword{
   border : none;
-  border-bottom: 1px solid rebeccapurple;
+  border-bottom: 1px solid #1ec545;
   outline: none;
   background: transparent;
   width: 150px;
-  color: rebeccapurple;
+  height: 56px;
+  color: #333;
   font-size: 16px;
   
 }
@@ -33,7 +34,6 @@ select {
   height: 20px;
   margin: -10px 0 0 -10px;
   background: url('../images/sprite.png') no-repeat;
-  -webkit-background-size: 474px 1500px;
   background-size: 474px 1500px;
   background-position: -169px 0;
 }
