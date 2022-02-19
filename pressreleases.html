@@ -66,18 +66,27 @@
         <div class="intro"> 
             <h2>보도자료</h2>
             <div class="line_box">
-                <form class = 'search'> 
-                    <select class = 'SelectSearch' name = 'WhichSearch'>
-                        <option id = 'btn_select' value = '2022'>2022</option>
-                        <option id = 'btn_select' value = '2021'>2021</option>
-                    </select>
-                    <input class = 'keyword' type = 'text' name = 'search' maxlength = 255 value = "" autocomplete = "off">
-                
-                    
-                    <button class = "btn_search" type = "submit" name = "click" value = "">
-                        <span class = "blind"></span>
-                    </button>
-                </form>
+                <div class="search"> 
+                    <form name="searchForm"> 
+                        <fieldset>
+                            <legend>Search reports</legend>
+                            <div class="wrap">
+                                <div class="selectWrap">
+                                    <select class="SelectSearch" name='WhichSearch'>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                    </select>
+                                </div>
+                                <div class="keywordWrap">
+                                    <input class="keyword" type="text" name="search" placeholder="input here" required> 
+                                    <button class="btn_search" type="submit">
+                                        <span class="blind">SEARCH</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
             <!--<div class="search">
                 <input type="text" list="potalsite">
