@@ -1,0 +1,96 @@
+/*intro*/
+.intro ul {
+    padding: 0 0 27px;
+    text-align: center;
+    li {
+        display: inline-block;
+        position: relative;
+        padding: 0 30px 0;
+        font-size: 20px;
+        font-weight: bold;
+        &::before {
+            content: " ";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 1px;
+            height: 18px;
+            background-color: #dce0e6;
+        }
+        &:first-child::before {
+            display: none;
+        }
+        a {
+            color: #bac2cd;
+            position: relative;
+            &:hover {
+                color: #333;
+            }
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                left: 1px;
+                bottom: -5px;
+                width: calc(100% - 2px);
+                height: 2px;
+                background-color: #00c73c;
+                transform: scaleX(0);
+                transition: 0.3s;
+                transform-origin: 0 0;
+                &:hover:after {
+                    transform: scaleX(1);
+                }
+        }
+    }
+}
+}
+  /* visual */
+.shareholder .visual {
+    background-image: url("../images/img_spot_organization.jpg");
+}
+/*details base*/
+.shareholder .details {
+    margin-top: 75px;
+    dl {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+    }
+    dt {
+        width: 23.5%;
+        font-size: 20px;
+        color: #333;
+        line-height: 28px;
+        letter-spacing: -0.6px;
+        padding-right: 20px;
+        font-weight: bold;
+    }
+    dd {
+        width: 76.5%;
+        font-size: 15px;
+        color: #606167;
+    }
+}
+
+/*table*/
+.shareholder .module-table th {
+    padding: 14px 0;
+    border-top: 2px solid #333;
+    color: #333;
+    font-size: 15px;
+    &:last-child {
+        text-align: right;
+    }
+}
+.shareholder .module-table tbody tr:first-child {
+    border-color: #333;
+}
+.shareholder .module-table td {
+    padding: 14px 0;
+    border-top: 1px solid #e8e8e8;
+    &:last-child {
+        text-align: right;
+    }
+}

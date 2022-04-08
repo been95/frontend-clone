@@ -1,13 +1,17 @@
-@charset "utf-8";
-
 /* visual */
 .flower .visual {
   background-image: url("../images/img_flower.jpg");
 }
+
 .flower_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 .flower_list li {
   color: #606167;
   font-size: 15px;
@@ -19,6 +23,7 @@
   padding-left: 30px;
   padding-right: 0;
 }
+
 .flower_list:after {
   content: "";
   display: block;
@@ -26,9 +31,12 @@
 }
 
 .dadan {
-  column-count: 3;
-  column-gap: 50px;
-  column-rule: 1px solid #ddd;
+  -webkit-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 50px;
+          column-gap: 50px;
+  -webkit-column-rule: 1px solid #ddd;
+          column-rule: 1px solid #ddd;
   /* column-width: 300px; */
 }
 
@@ -39,23 +47,31 @@
   text-align: center;
   font-size: 50px;
   padding: 30px 0;
-  column-span: all;
+  -webkit-column-span: all;
+          column-span: all;
 }
 
 .btn_area {
   margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: right;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
 }
+
 .btn_area a {
   margin-left: 16px;
 }
+
 .btn_area .btn_text {
   color: #333;
   font-weight: bold;
   margin-right: 16px;
   line-height: 46px;
 }
+
 .icon_down {
   display: inline-block;
   vertical-align: top;
@@ -65,6 +81,17 @@
   background-color: #bac2cd;
   border-radius: 100%;
 }
+
+.icon_down:hover {
+  background-color: #00c73c;
+}
+
+.icon_down:before {
+  width: 18px;
+  height: 19px;
+  margin: -9px 0 0 -9px;
+}
+
 .icon_next {
   display: inline-block;
   vertical-align: top;
@@ -74,17 +101,11 @@
   background-color: #bac2cd;
   border-radius: 100%;
 }
-.icon_down:hover {
-  background-color: #00c73c;
-}
+
 .icon_next:hover {
   background-color: #00c73c;
 }
-.icon_down:before {
-  width: 18px;
-  height: 19px;
-  margin: -9px 0 0 -9px;
-}
+
 .icon_down:before,
 .icon_vod:before {
   content: "";
@@ -95,6 +116,7 @@
   background-position: -266px 0;
   background-size: 474px 1500px;
 }
+
 .icon_next:before {
   content: "";
   width: 15px;
@@ -107,3 +129,4 @@
   background-size: 474px 1500px;
   background-position: -230px 0;
 }
+/*# sourceMappingURL=flower.css.map */

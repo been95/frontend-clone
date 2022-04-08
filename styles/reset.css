@@ -1,19 +1,23 @@
-@charset "utf-8";
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 li {
   list-style: none;
 }
+
 button {
   border: 0;
   background: none;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -21,10 +25,12 @@ body {
   line-height: 1.4;
   font-size: 15px;
 }
+
 dd {
   margin: 0;
   padding: 0;
 }
+
 button,
 fieldset {
   border: 0;
@@ -39,11 +45,13 @@ table {
   border-spacing: 0;
   width: 100%;
 }
+
 th {
   text-align: left;
   color: #333;
   font-weight: bold;
 }
+
 .blind,
 legend {
   position: absolute;
@@ -52,3 +60,4 @@ legend {
   margin: -1px;
   overflow: hidden;
 }
+/*# sourceMappingURL=reset.css.map */

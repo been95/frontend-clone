@@ -1,7 +1,4 @@
-@charset "utf-8";
-
 /* layout common */
-
 .subMain {
   padding: 100px 0 160px;
 }
@@ -12,25 +9,30 @@
 }
 
 /*location*/
-
 .subMain .location {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
   padding: 0 30px 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.location li {
+.subMain .location li {
   position: relative;
   margin-top: -2px;
   padding: 0 25px 0 0;
 }
-.location li:last-child {
+
+.subMain .location li:last-child {
   padding: 0;
 }
-.location li::after {
+
+.subMain .location li::after {
   content: "";
   display: block;
   position: absolute;
@@ -42,16 +44,16 @@
   background-position: -103px 0;
 }
 
-.location a {
+.subMain .location a {
   font-size: 12px;
   color: #878890;
 }
-.location a:hover {
+
+.subMain .location a:hover {
   text-decoration: underline;
 }
 
 /*content_head*/
-
 .subMain .intro {
   text-align: center;
 }
@@ -73,9 +75,9 @@
 }
 
 /* sub Visual */
-
 .subMain .visual {
   height: 350px;
   background: no-repeat center center/cover;
   margin: 35px 0;
 }
+/*# sourceMappingURL=sub_common.css.map */
