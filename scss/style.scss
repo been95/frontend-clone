@@ -1,0 +1,19 @@
+@charset "utf-8";
+$url: "../images/";
+/* CSS COMMENT */ //  SASS COMMENT
+
+@import "reset";
+
+.allWrap {
+  position: relative;
+  min-width: 1120px;
+  min-height: 100%;
+}
+
+@import "header";
+@import "home";
+
+@import "sub_common";
+@import "company", "flower", "featured", "pressreleases", "shareholder";
+
+@import "footer";
